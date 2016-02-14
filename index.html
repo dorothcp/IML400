@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
+    <script type= "text/javascript" src= "javascripts/jquery-2.2.0.min.js"> </script>
     <title>IML400</title>
   </head>
 
@@ -24,10 +24,10 @@
           <a href="https://github.com/bytezen/IML400/tarball/master" class="btn">Download as .tar.gz</a>
           <a href="https://github.com/bytezen/IML400" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
-        <nav>
-          <ul>
-            <li><a href="reflections.html">reflections</a></li>
-            <li><a href="projects.html">projects</a></li>
+        <nav id= "navigation">
+          <ul class= "home">
+            <li><a href="readings.html">Readings</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
             <li><a href="https://github.com/dorothcp/IML400/tree/gh-pages">wiki</a></li>
           </ul>
         </nav>         
@@ -51,6 +51,17 @@
         Lastly, because I never used the terminal, I want to be familiar with and understand cloning, uploading files onto the server. 
         </p>
         <hr>
-    
+    <p> 
+    0) to change your website make sure that you are on the gh-pages branch
+
+    enter : git branch
+    *you want to see gh-pages
+    checkout gh-pages
+    1) make sure that you are in your project directory
+    2) git status (to check the status of your new files)
+    3) git add . [all the files that are new and have been changed]
+    4) commit -m "message" add files LOCALLY
+    5) git push [this adds all of the files from LOCAL to REMOTE (server)]
+    </p>
   </body>
 </html>

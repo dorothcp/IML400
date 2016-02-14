@@ -32,6 +32,7 @@ console.log('...challenge 1...');
 var leftWing= document.getElementsByClassName("wing_L");
 leftWing[0].style.backgroundColor= "red";
 
+
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 /*  Ch2											*/	
 /*	Change the background color of the cage  	*/	
@@ -40,7 +41,8 @@ leftWing[0].style.backgroundColor= "red";
 console.log('...challenge 2...');
 var cage3= document.getElementsByClassName("cage  column-4");
 cage3[2].style.backgroundColor= "green";
-
+//var daCage= document.getElementsByClassName("cage")
+//deCage[2].setAttribute("style", "background-color: white");
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 /*  Ch3											*/	
 /*	Change the length of the beak for the owl	*/	
@@ -62,6 +64,8 @@ cage3[2].style.backgroundColor= "green";
 console.log('...challenge 3...');
 var beak= document.getElementsByClassName("beak");
 beak[5].style.borderTop= "120px solid goldrenrod";
+//elements, rightclick, copy selector
+//document.querySelector( paste code).setAttribute("style","border-top: 120px solid magenta");
 
 
 
