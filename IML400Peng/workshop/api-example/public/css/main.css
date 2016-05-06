@@ -1,0 +1,33 @@
+body {
+    margin-left: 1em;
+    background: aquamarine;
+}
+
+#results {
+    margin-top: 2em;
+    margin-left: 1em;
+    background: aliceblue;
+}
+
+#debug_info {
+    background: goldenrod;
+}
+
+.rhyme {
+    background: gray;
+    margin: 1em 0em;
+    padding: 5px;
+    max-width: 200px;
+}
+
+.rhyme.good {
+    color: beige;
+}
+
+.rhyme.ok {
+    color: azure;
+}
+
+.rhyme.soso {
+    color: darkgray;
+}
