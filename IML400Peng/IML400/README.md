@@ -1,3 +1,0 @@
-# IML400
-
-Hello Class...this is going to be our first edit and 100,000 subsequent commit to introduce you to the wonderful, rockin, function() {console.log('this is some javascript'); awesome, supa dope world of Github...
