@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WORKSHOP TEMPLATE</title>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script type="text/javascript" src="scripts/jquery-2.2.1.min.js"></script>
+    </head>
+    <body><script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.2.10.1.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+        
+    <h1> API Testing Example </h1>
+    <form>
+    <input id="query" name="strSearch" type="text"/>
+    <input type="button" value="submit" onClick="onSubmit()"/>
+    </form>
+        <script type="text/javascript" src="scripts/main.js"></script>    
+    </body>
+</html>
