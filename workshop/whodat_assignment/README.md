@@ -6,16 +6,14 @@ To do this you need to update your __CLASS__ repository.
 2. Enter:   
 
 ```
-//make sure that you are not on the branch for the course website  
-git checkout master  
-// Now grab all the files that I added and download them to your machine  
 git pull
 ```
 
 this will pull the new files from the repository to your computer. You will find the files that you need in this folder:
 
+
 ```
-workshops/whodat_assignment
+whodat_assignment
 ```
 
 Now, in Finder or Windows Exlporer you are going to add the assignment folder to your class website. You should have a workshops folder for your class website. (If not refer to the syllabus instructions again to remind yourself about the directory structure of your website. ) Copy the _whodat\_assignment_ folder into the _workshop_ directory of your website. You probably should also add an index file to the _workshop_ directory with a link to the _whodat\_assignment_ directory.

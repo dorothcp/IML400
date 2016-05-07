@@ -31,6 +31,18 @@ console.log('...challenge 1...');
 //paste your code here...and delete
 console.log('\tnot completed')
 
+var myResult = document.getElementsByClassName('wing_L');
+myResult[0].setAttribute( "style", "background-color: purple");
+
+var myResultRight = document.getElementsByClassName('wing_R');
+myResultRight[0].setAttribute( "style", "background-color: deeppink");
+
+// var $wingR = document.getElementsByClassName('wing_R')[0];
+// var $wingL = document.getElementsByClassName('wing_L')[0];
+// $wingL.setAttribute("style","background-color: red");
+// $wingR.setAttribute("style","background-color: red");
+
+
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 /*  Ch2											*/	
 /*	Change the background color of the cage  	*/	
@@ -40,7 +52,8 @@ console.log('...challenge 2...');
 console.log('\tnot completed')
 //paste your code here...
 
-
+var daCage = document.getElementsByClassName('cage')
+daCage[2].setAttribute('style', 'background-color: black')
 
 
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
@@ -65,6 +78,10 @@ console.log('...challenge 3...');
 console.log('\tnot completed')
 //paste your code here...
 
+document.querySelector("#container > div:nth-child(2) > div:nth-child(3) > section.beak").setAttribute("style","border-top: 60px solid magenta")
+// var $beak = document.getElementsByClassName('beak')[5];
+// $beak.setAttribute("style","border-top-width: 120px;")
+
 
 
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
@@ -81,20 +98,18 @@ console.log('\tnot completed')
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 console.log('...challenge 4...');
 console.log('\tnot completed')
-function getCage(cageNumber) {
-	// Uncomment and fill in the code below
 
-	// Hint: 
-	// First get the cages
-	// Second, get the cage that corresponds to the cageNumber
-	// that was passed in
-	// Third, return that cage
-
-	// var selectedCage = 
-
-	return selectedCage;
+// This function assumes that you are counting from 1 not O!!!
+function getCage( aNumber ) {
+//   aNumber--;
+  aNumber = aNumber - 1;
+  var res = document.getElementsByClassName('cage')[aNumber];
+  return res;
 }
 
+console.log("this is a test of my function..I am gonna get the 4th cage...")
+var mytestCage = getCage(3)
+console.log(mytestCage);
 
 
 

@@ -1,33 +1,15 @@
 body {
     margin-left: 1em;
-    background: aquamarine;
+	padding-top: 250px;
+    background-image: url("https://static.pexels.com/photos/24061/pexels-photo.jpg");
+	text-align: center;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 }
 
 #results {
     margin-top: 2em;
     margin-left: 1em;
-    background: aliceblue;
+	height: 100px;
 }
 
-#debug_info {
-    background: goldenrod;
-}
 
-.rhyme {
-    background: gray;
-    margin: 1em 0em;
-    padding: 5px;
-    max-width: 200px;
-}
-
-.rhyme.good {
-    color: beige;
-}
-
-.rhyme.ok {
-    color: azure;
-}
-
-.rhyme.soso {
-    color: darkgray;
-}

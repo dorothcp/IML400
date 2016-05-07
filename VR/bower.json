@@ -1,0 +1,33 @@
+{
+  "name": "webvr-starter-kit",
+  "version": "0.0.0",
+  "authors": [
+    "Brian Chirls <brian@chirls.com>"
+  ],
+  "main": "main.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "webvr",
+    "3d",
+    "webgl"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "DeviceOrientationControls": "https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/controls/DeviceOrientationControls.js",
+    "OrbitControls": "http://threejs.org/examples/js/controls/OrbitControls.js",
+    "SkyShader": "http://threejs.org/examples/js/SkyShader.js",
+    "AugmentedConsole": "https://raw.githubusercontent.com/spite/THREE.AugmentedConsole.js/master/src/THREE.AugmentedConsole.js",
+    "open-iconic": "~1.1.1",
+    "nosleep": "~0.5.0"
+  }
+}

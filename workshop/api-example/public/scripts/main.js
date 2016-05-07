@@ -1,7 +1,7 @@
 console.log("...javascript {main.js} loaded...");
 
 
-var SERVICE = "http://api.openweathermap.org/data/2.5/weather?id=";
+var SERVICE = "http://api.openweathermap.org/data/2.5/weather?zip=";
 
 // This is the base URL for the rhymebrain api
 // See this page:
@@ -12,7 +12,7 @@ var SERVICE = "http://api.openweathermap.org/data/2.5/weather?id=";
 var RHYMEBRAIN_URL = "http://api.openweathermap.org/data/2.5/weather";
 
 var result = null;
-var msg_results = "<p class='msg'></p>";
+var msg_results = "<p class='msg'> Explore the weather by typing in a zipcode in the box above. Type clear to reset.  </p>";
 /**
  button handlers
 
@@ -32,9 +32,14 @@ function onClear() {
 // get the results, parse the results and display the results, phew...
 function onSubmit() {
     //get the word that the user entered
-    var query = $('#query').val();
 
-    console.log('find city: ' + query);
+ 
+    var query = $('#query').val();
+    if (query == "zipcode") {
+   		query= "90007";
+    }
+
+    console.log('zipcode: ' + query);
 
     //pass the user's entry to a function that will format it to submit to the server
     // the reason to do this is because of the next step where we call the
@@ -63,7 +68,7 @@ function onSubmit() {
 	console.log(myRequest);
 	console.log("---- dash");
     $.getJSON( "http://api.openweathermap.org/data/2.5/weather", myRequest).done( onJSONSuccess ).fail( onJSONFail );
-
+     $("#results").empty();
 }
 
 
@@ -104,7 +109,7 @@ function formatQuery( aQueryString ) {
     // with the string '%20'
     //
     // Note that this also adds the a 'word' property to our request object
-    request.id =  encodeURIComponent(aQueryString);
+    request.zip =  encodeURIComponent(aQueryString);
 	
     console.log('going to make the following request:');    
     console.log(request);
@@ -132,9 +137,8 @@ function onJSONSuccess( returnedData ) {
     // See:
     // http://www.w3schools.com/jquery/jquery_dom_add.asp    
 
-
-
-        $aResult = $("<div class='rhyme " + " '><h4>" + returnedData.id + " : Today's weather at " + returnedData.name + "is" + returnedData.weather[0].description + "</h4> </div>");
+	
+        $aResult = $("<div class='rhyme " + " '><h4>" + returnedData.name + " : " + returnedData.weather[0].description+  "</h4> </div>");
 
         //Now add the element that we just created to the end of the result div
         $("#results").append($aResult);
