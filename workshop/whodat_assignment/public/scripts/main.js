@@ -40,7 +40,10 @@ leftWing[0].style.backgroundColor= "red";
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 console.log('...challenge 2...');
 var cage3= document.getElementsByClassName("cage  column-4");
+<<<<<<< HEAD
 //cage3.setAttribute("style", "background-color: purple");
+=======
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 cage3[2].style.backgroundColor= "green";
 //var daCage= document.getElementsByClassName("cage")
 //deCage[2].setAttribute("style", "background-color: white");
@@ -87,7 +90,11 @@ console.log('...challenge 4...');
 function getCage(cageNumber) {
 	var selectedCage= document.getElementsByClassName("cage  column-4");
 	return selectedCage(cageNumber);
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 
 
 
@@ -111,7 +118,11 @@ function changeColor (owlNum) {
 	var body= document.getElementsByClassName("body prpl-d4");
 	cage[owlNum].style.backgroundColor= "blue";
 	body[owlNum].style.backgroundColor= "pink";
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 changeColor(4);
 changeColor(1);
 
@@ -132,6 +143,7 @@ console.log('...challenge 6...');
 function getWings(anOwl) {
 	var wingsL= document.getElementsByClassName("wing_L");
 	var wingsR= document.getElementsByClassName("wing_R");
+<<<<<<< HEAD
 	return [wingsR[anOwl], wingsL[anOwl]];
 };
 getWings(3);
@@ -140,22 +152,48 @@ function getBeak(anOwl) {
 	var beak= document.getElementsByClassName("beak");
 	return beak[anOwl];
 };
+=======
+	return [wingsR[anOwl], wingsL[anOwl];
+}
+getWings(3);
+
+function getBeak(anOwl) {
+	function getBeak (anOwl) {
+	var beak= document.getElementsByClassName("beak");
+	return beak[anOwl];
+}
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 
 function getEyes(anOwl) {
 	var eyeL= document.getElementsByClassName("eye_L");
 	var eyeR= document.getElementsByClassName("eye_R");
+<<<<<<< HEAD
 	return [eyeR[anOwl], eyeL[anOwl]];
 };
+=======
+	return [eyeR[anOwl], eyeL[anOwl];
+}
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 
 function getBody(anOwl) {
 	var body= document.getElementsByClassName("body prpl-d4");
 	return body[anOwl];
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 
 function getPupils(anOwl) {
 	var pupil= document.getElementsByClassName("pupil");
 	return [pupil[anOwl*2], pupil[anOwl*2+1]];
+<<<<<<< HEAD
 };
 getPupils(5);
 console.log("completed!");
+=======
+}
+getPupils(5);
+
+>>>>>>> fa65be50a2234eb69e51e0349b7aa0e6527b59c3
 
