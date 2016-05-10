@@ -41,11 +41,31 @@
 sound.volume(1);
 sound.start();
 //night sky
+var button = document.createElement('span');
+            button.id= 'timeToggle';
+            button.setAttribute('toggled',false);
+            button.setAttribute('onclick','toggleTime(this)');
+            button.innerHTML= "Time";
+            document.getElementById('buttons').appendChild(button);
 
-var button= document.createElement('span');
-button.id= 'night';
-button.setAttribute('day','night');
-button.innerHTML= "Time";
+    function toggleTime(button) {
+        var isToggled = button.getAttribute('toggled');
+        console.log(isToggled);
+        switch(isToggled) {
+            case "false":
+                VR.animate(function(delta,time) {
+                    sky.altitude += (3.14);
+                });
+                button.setAttribute('toggled', "true");
+                return;
+            case "true":
+                VR.animate(function(delta,time) {
+                    sky.altitude += (3.14);
+                });
+                button.setAttribute('toggled', "false");
+                return;
+        }
+    }
 
            var sky = VR.sky();
 			 VR.animate(function (delta, time) {
@@ -64,36 +84,7 @@ var myBoolean= false;
 function background () {
     return VR.panorama('assets/sky.png');
 }
-            
-button.onclick= (function() {
-    console.log (myBoolean);
-    myBoolean = !myBoolean;
-    
-    //background.toggle();
-});
-if (true) {
-    console.log ("yes");
-    background;
-}
-   
-//    if (night== false) {
-//        night= true;
-//        VR.panorama('assets/sky.png').show;
-//        console.log("true");
-//    } 
-//    if (night== true) {
-//        night = false;
-//        console.log("false");
-//        sky;
-//     //VR.panorama('assets/sky.png').hide;
-//    }
-
-
-
-
-    
-document.getElementById('buttons').appendChild(button);
-      
+//camera angle      
              VR.body.moveTo(1.3, 1.5, 0);
             
 
