@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script type= "text/javascript" src= "javascripts/jquery-2.2.0.min.js"> </script>
+
+    <title>Assignments</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+          <li id= "home"> <a href= "index.html"> <h1> Dorothy Peng </h1></a></li>      
+      </div>
+     
+    </header>
+      
+    <div class="container">
+      <section id="main_content">
+         <h1 id="iml-400-creative-coding-for-the-web">Final Project: 之一 </h1>
+          
+        <a href= "https://docs.google.com/a/usc.edu/presentation/d/1eKJ9xFesN3aQIJ-7BMKv3wp71dGXOSfE-bquzlq0n3A/edit?usp=sharing"> Final Presentation </a>
+          <br>
+        <a href= "http://localhost:8080/VR/examples/sky.html"> VR Meditation </a>
+        
+		<p> Letter of Intent:
+    	<br> I have always been a critic of virtual reality. Despite its popularity, I was always highly critical that it failed or was incapable of portraying reality. Reality has too many dimensions that it is impossible to structure a similar experience. However with no experience with Virtual Reality, I think it is rather arrogant of me to make such statement. Hence, for the final project I want to create a virtual reality experience. The goal is not to replicate reality rather it is to encompass a mood of peace. For the last couple days, I was unable to sleep. Brainstorming an idea for the final project was very frustrating and stressful. If I was home in New Jersey, to move out of the moment. Despite there being thousands of meditation methods, they all have the same goal for the user to achieve “effortless inner silence [so] deeper states of consciousness can be discovered.” This idea of choiceless awareness and pure being is the fundamental purpose behind all meditation. Therefore, I want to create such feeling solely based on the environment. Meditation using VR already exist but it’s a guided process that personally makes me feel anxious. My hope is that people do not have to take part, rather just be part of the experience. Also because I want this experience to be easily accessible to college students, I want to focus my development on the laptop platform. The experience will still be 360 but instead of looking around, navigating requires using the mouse or arrow keys.
+    	<br> <br> Theme and Subject:
+    	<br> The virtual reality encompasses the user on a boat. The water will be calm, and above the water is a layer of fog making the horizon different to see. Time will be the changing factor in this experience. The color and brightness of the sky corresponds to the current time. The experience also includes an audio track of nature sounds like the undulation of waves and chirping of distance birds.  
+    	<br> <br> Scope:
+    	<br> For the construction of the boat, I hope to create it in illustrator or possibly unity. For the nature track, if time permits, I want to record my own audio track near the ocean. The color and brightness of the sky will be based on Weather.com’s API. More research needs to be done on how to add special effects and how to create a 360 platform. 
+    	<br> <br> Design:
+    	<br> I want to keep the presentation of my content as simple and as neutral as possible. Besides the navigation on the top left hand corner, the rest of the content is nature. 
+    	<br><br> 
+    	<img src="img/wireframe.jpg" alt= "Wireframe">
+    	<br> Research:
+    	<br>
+    	<a href= "http://i-remember.fr/en/"> Theme</a> 
+    	-- I really like the self exploratory aspect of the project
+    	<br>
+    	<a href= "https://www.youtube.com/watch?v=5pFOB4YUc1s&list=PLdgiQwUzQNZtj-ySmrQ7zTtPxW1D7f8AB&nohtml5=False"> Non-Virtual Meditation Guide</a>
+    	--too much input
+    	<br>
+    	<a href= "http://guidedmeditationvr.com/"> VR Meditation Guide</a>
+    	--too complex
+    	<br> <br>
+    	Creative Direction & Design Proposal:
+    	<br> Sticking with original proposal! <br> <br>
+		Two different user stories based on two different personas from target userbase:
+		<br> 
+		Mindful Meditation: (Buddhist tradition)
+		<br>-awareness of sounds and activities around
+		<br>-fluidity of bind
+		<br>-usually sitting
+		<br>-being in the moment
+		<br>
+		Spiritual Meditation:
+		<br>-communication with God to discover truth
+		<br>-be calm and quiet first before focusing on the problem
+		<br>-reward
+		<br>-focus on present moment
+		<br>
+		<p>"There are three basic aspects worked with in [mindful] meditation technique : body, breath and thoughts. First, we relate with the body. This includes how we set up the environment. Since we use meditation in preparing ourselves to work with others, we use an eyes-open practice. That makes what we have in front of us a factor in our practice." <p>
+		<a href= "https://www.psychologytoday.com/blog/the-courage-be-present/201001/how-practice-mindfulness-meditation"> citation</a> <br>
+		<br>
+		Comprehensive Content Outline:
+		<br> Person in wooden boat. The water is reflective of the sky like a mirror. There is mist on the water and horizon is far away and difficult to see. The sky changes in accordance with Los Angeles' time. <br>
+		<br>Research analysis of technical requirements and technical scope:
+		<br>
+		<a href= "http://jsbin.com/taciwo/1/edit?js,output"> VR Platform</a> <br>
+		<a href= "https://github.com/povdocs/webvr-starter-kit"> Web VR Starter Kit</a> <br>
+		        <a href= "https://povdocs.github.io/webvr-starter-kit/examples/panorama3d.html"> 3D Panorama</a> <br>
+        <a href= "https://medium.com/edge-cases/building-in-webvr-makes-vr-easy-9fb63857c1a6#.8q7kcu3bi"> Building in WebVR makes VR Easy</a> : <a href= "https://github.com/borismus/webvr-boilerplate" > gitHub</a>
+		<a href= "http://www.sitepoint.com/bringing-vr-to-web-google-cardboard-three-js/"> Weather API</a>
+		<a href= "https://github.com/dli/waves"> Ocean Simulator</a>
+		<br>
+		Experimental Code: <br>
+		VR.floor({ color: 'lightblue' });
+VR.box().moveTo(0, 0, 0).setMaterial('weathered-wood');
+//find water and take from github
+VR.floor().setMaterial('grass', {
+            repeat: 300
+        });
+        //an animated sky
+        var sky = VR.sky();
+        VR.animate(function (delta, time) {
+            var oldAzimuth = sky.azimuth;
+          //the bigger the division, the slower the time
+            sky.altitude = time / 30;
+            if (oldAzimuth !== sky.azimuth) {
+                console.log(sky.azimuth);
+            }
+        });
+        //place viewer in center
+        VR.body.moveTo(0, 1.5, 0);
+        <br> <br>
+
+    	
+    	
+        
+    
+  </body>
+</html>

@@ -1,7 +1,7 @@
 /* ----- */
 // Replace YOUR NAME with yours
 
-var NAME = "YOUR NAME";
+var NAME = "Dorothy Peng";
 console.log( "/*****************/\n" + NAME +"'s submission \nfor Whodat Assignment" + "\n/*****************/\n");
 
 
@@ -29,18 +29,8 @@ console.log( "/*****************/\n" + NAME +"'s submission \nfor Whodat Assignm
 console.log('...challenge 1...');
 
 //paste your code here...and delete
-console.log('\tnot completed')
-
-var myResult = document.getElementsByClassName('wing_L');
-myResult[0].setAttribute( "style", "background-color: purple");
-
-var myResultRight = document.getElementsByClassName('wing_R');
-myResultRight[0].setAttribute( "style", "background-color: deeppink");
-
-// var $wingR = document.getElementsByClassName('wing_R')[0];
-// var $wingL = document.getElementsByClassName('wing_L')[0];
-// $wingL.setAttribute("style","background-color: red");
-// $wingR.setAttribute("style","background-color: red");
+var leftWing= document.getElementsByClassName("wing_L");
+leftWing[0].style.backgroundColor= "red";
 
 
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
@@ -49,13 +39,10 @@ myResultRight[0].setAttribute( "style", "background-color: deeppink");
 /*	on the 1st row at the end					*/	
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 console.log('...challenge 2...');
-console.log('\tnot completed')
-//paste your code here...
-
-var daCage = document.getElementsByClassName('cage')
-daCage[2].setAttribute('style', 'background-color: black')
-
-
+var cage3= document.getElementsByClassName("cage  column-4");
+cage3[2].style.backgroundColor= "green";
+//var daCage= document.getElementsByClassName("cage")
+//deCage[2].setAttribute("style", "background-color: white");
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 /*  Ch3											*/	
 /*	Change the length of the beak for the owl	*/	
@@ -75,12 +62,11 @@ daCage[2].setAttribute('style', 'background-color: black')
 /** ---		----	---	 **/
 
 console.log('...challenge 3...');
-console.log('\tnot completed')
-//paste your code here...
+var beak= document.getElementsByClassName("beak");
+beak[5].style.borderTop= "120px solid goldrenrod";
+//elements, rightclick, copy selector
+//document.querySelector( paste code).setAttribute("style","border-top: 120px solid magenta");
 
-document.querySelector("#container > div:nth-child(2) > div:nth-child(3) > section.beak").setAttribute("style","border-top: 60px solid magenta")
-// var $beak = document.getElementsByClassName('beak')[5];
-// $beak.setAttribute("style","border-top-width: 120px;")
 
 
 
@@ -97,19 +83,11 @@ document.querySelector("#container > div:nth-child(2) > div:nth-child(3) > secti
 /*				html Tag for the first cage     */					
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
 console.log('...challenge 4...');
-console.log('\tnot completed')
-
-// This function assumes that you are counting from 1 not O!!!
-function getCage( aNumber ) {
-//   aNumber--;
-  aNumber = aNumber - 1;
-  var res = document.getElementsByClassName('cage')[aNumber];
-  return res;
+function getCage(cageNumber) {
+	var selectedCage= document.getElementsByClassName("cage  column-4");
+	return selectedCage(cageNumber);
 }
 
-console.log("this is a test of my function..I am gonna get the 4th cage...")
-var mytestCage = getCage(3)
-console.log(mytestCage);
 
 
 
@@ -127,10 +105,14 @@ console.log(mytestCage);
 console.log('...challenge 5...');
 console.log('\tnot completed')
 //paste your code here...
-
-
-
-
+function changeColor (owlNum) {
+	var cage= document.getElementsByClassName("cage  column-4");
+	var body= document.getElementsByClassName("body prpl-d4");
+	cage[owlNum].style.backgroundColor= "blue";
+	body[owlNum].style.backgroundColor= "pink";
+}
+changeColor(4);
+changeColor(1);
 
 
 /* -=-=-=-			=-=-=-=-=			-=-=-= 	*/
@@ -147,23 +129,33 @@ console.log('\tnot completed')
 //paste your code here...
 
 function getWings(anOwl) {
-	return wings;
+	var wingsL= document.getElementsByClassName("wing_L");
+	var wingsR= document.getElementsByClassName("wing_R");
+	return [wingsR[anOwl], wingsL[anOwl];
 }
+getWings(3);
 
 function getBeak(anOwl) {
-	return wings;
+	function getBeak (anOwl) {
+	var beak= document.getElementsByClassName("beak");
+	return beak[anOwl];
 }
 
 function getEyes(anOwl) {
-	return eyes;
+	var eyeL= document.getElementsByClassName("eye_L");
+	var eyeR= document.getElementsByClassName("eye_R");
+	return [eyeR[anOwl], eyeL[anOwl];
 }
 
 function getBody(anOwl) {
-	return body;
+	var body= document.getElementsByClassName("body prpl-d4");
+	return body[anOwl];
 }
 
 function getPupils(anOwl) {
-
+	var pupil= document.getElementsByClassName("pupil");
+	return [pupil[anOwl*2], pupil[anOwl*2+1]];
 }
+getPupils(5);
 
 

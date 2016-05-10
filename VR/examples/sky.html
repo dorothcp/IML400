@@ -4,8 +4,17 @@
         <meta charset="utf-8">
         <title>WebVR Starter Kit - Sky Example</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <style type="text/css">
+            #buttons > * {
+                color: black;
+                vertical-align: right;
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
+
     <script src="//povdocs.github.io/webvr-starter-kit/build/vr.js"></script>
         <script type="text/javascript" src="../build/vr.dev.js" charset="utf-8"></script>
         <script type="text/javascript" src="../src/materials.js" charset="utf-8"></script>
@@ -37,7 +46,29 @@
 sound.volume(1);
 sound.start();
 //night sky
-  //VR.panorama('assets/sky.png');
+
+var button= document.createElement('span');
+button.id= 'night';
+button.setAttribute('day','night');
+button.innerHTML= "Night";
+
+//night =false;
+                
+//button.onclick= function() {
+//    if (night== false) {
+//        night= true;
+//        console.log("true");
+//} else {
+//    night = false;
+//    console.log("false");
+//}
+//}
+button.onclick= function() {
+ VR.panorama('assets/sky.png');
+}
+
+    
+document.getElementById('buttons').appendChild(button);
       
              VR.body.moveTo(1.3, 1.5, 0);
             
@@ -59,5 +90,6 @@ sound.start();
         
 
         </script>
+       
     </body>
 </html>
